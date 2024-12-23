@@ -64,4 +64,4 @@ assert(small_random_polynomial_correct_commitment() == True)
    ```
 
 ## References:
-[KZG Polynomial Commitment article](https://hackmd.io/769wh787T8SNaFwmNX74fA) by Dr. Anca Nitulescu.
+[KZG Polynomial Commitment tutorial](https://hackmd.io/769wh787T8SNaFwmNX74fA) by Dr. Anca Nitulescu.
