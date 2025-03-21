@@ -55,12 +55,12 @@ assert(small_random_polynomial_correct_commitment() == True)
    prover = Prover(ck, f)
    verifier = Verifier(vk)
 
-   c_f = prover.commit()
-   s = 2 # The point that the prover is committing to.
-   z = int(f(s))
-   c_q = prover.eval(s)
+   polynomial_commitment = prover.commit()
+   point = 2 # The point that the prover is committing to.
+   value = int(f(point))
+   quotient_polynomial_commitment = prover.eval(point)
 
-   assert verifier.verify(c_f, s, z, c_q) == True
+   assert verifier.verify(polynomial_commitment, point, value, quotient_polynomial_commitment) == True
    ```
 
 ## References:
