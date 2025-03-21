@@ -41,7 +41,7 @@ assert(small_random_polynomial_correct_commitment() == True)
 ## Usage:
 1. Install dependencies:
    ```
-   pip install py_arkworks_bls12381 numpy
+   pip install py_arkworks_bls12381 numpy sympy
    ```
 2. Set the maximum degree for polynomial commitments:
    ```python
@@ -51,7 +51,7 @@ assert(small_random_polynomial_correct_commitment() == True)
    ```
 3. Commit and verify a polynomial:
    ```python
-   f = P.Polynomial([1, 2, 3])  # Define polynomial
+   f = P.Polynomial([3, 2, 1])  # Define polynomial (3x^2 + 2x + 1)
    prover = Prover(ck, f)
    verifier = Verifier(vk)
 
